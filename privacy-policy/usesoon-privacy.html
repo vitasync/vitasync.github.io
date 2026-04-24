@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UseSoon Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      color: #163b2d;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    a {
+      color: #1f6f50;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 22px;
+    }
+    .muted {
+      color: #666;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>UseSoon — Privacy Policy</h1>
+    <p class="muted"><em>Last updated: 24 April 2026</em></p>
+
+    <p>This privacy policy applies to the UseSoon Android app ("UseSoon", "the app", "we").</p>
+
+    <h2>1. Who we are</h2>
+    <p>UseSoon is published by Vitasync Labs. You can contact us at <strong>vitasynclabs@gmail.com</strong>.</p>
+
+    <h2>2. Accounts</h2>
+    <p>UseSoon does <strong>not</strong> require an account. There is no sign-up, no sign-in, no user profile, and no password.</p>
+
+    <h2>3. What information the app handles</h2>
+
+    <h3>3.1 Food item data (stored locally on your device)</h3>
+    <p>When you add an item — by scanning a barcode or entering it manually — the app stores the following on your device only:</p>
+    <ul>
+      <li>the product name you choose</li>
+      <li>the expiry date you choose</li>
+      <li>the storage location you choose (fridge, freezer, cupboard)</li>
+      <li>the category you choose</li>
+      <li>optionally, the barcode number for that item</li>
+      <li>optionally, a product image URL</li>
+      <li>timestamps for when you created, updated, used, or were reminded about the item</li>
+    </ul>
+    <p>This data is kept in a local database on your device. It is <strong>not</strong> sent to our servers. We do not operate servers for UseSoon.</p>
+
+    <h3>3.2 Barcode lookups (sent to Open Food Facts)</h3>
+    <p>When you scan a barcode, the app sends <strong>the barcode number</strong> to the Open Food Facts API at <code>world.openfoodfacts.org</code> to try to identify the product. Open Food Facts is a public, open-source food database operated by a non-profit.</p>
+    <ul>
+      <li>We do <strong>not</strong> send any personal information with the barcode.</li>
+      <li>We do <strong>not</strong> send your device identifiers, account, email, or location.</li>
+      <li>We identify our app to Open Food Facts with a User-Agent string that includes our contact email (<strong>vitasynclabs@gmail.com</strong>), as Open Food Facts requests of API clients.</li>
+      <li>The barcode result we receive (product name, brand, image URL, category) is cached on your device so we do not re-query the same barcode unnecessarily.</li>
+    </ul>
+    <p>You can avoid barcode lookups entirely by only adding items manually.</p>
+    <p>Open Food Facts has its own privacy policy:
+      <a href="https://world.openfoodfacts.org/privacy" target="_blank">https://world.openfoodfacts.org/privacy</a>
+    </p>
+
+    <h3>3.3 Product images</h3>
+    <p>If Open Food Facts returns an image URL for a scanned product, the app loads that image <strong>directly from the Open Food Facts image server</strong> on demand. No image is uploaded by you.</p>
+
+    <h3>3.4 Notifications</h3>
+    <p>Reminders are <strong>local notifications</strong> scheduled and delivered by your device. The app reads its own local database at the reminder time and generates the notification on-device. No reminder content is sent over the internet.</p>
+
+    <h3>3.5 Crash and analytics data</h3>
+    <p>UseSoon does <strong>not</strong> include any analytics SDK, advertising SDK, or crash reporter. We do not collect usage data.</p>
+
+    <h2>4. What we do not do</h2>
+    <ul>
+      <li>We do not operate accounts or cloud sync.</li>
+      <li>We do not show ads.</li>
+      <li>We do not share or sell your data.</li>
+      <li>We do not track you across apps or websites.</li>
+      <li>We do not use third-party advertising networks.</li>
+      <li>We do not collect your contacts, location, photos, microphone, or device identifiers.</li>
+    </ul>
+
+    <h2>5. Permissions the app requests</h2>
+    <ul>
+      <li><strong>Internet</strong> — to look up barcodes via Open Food Facts and load product images.</li>
+      <li><strong>Post notifications</strong> (Android 13 and later) — to show the daily reminder digest you opted into. You can revoke this in system settings at any time.</li>
+    </ul>
+    <p>The app uses the Google Code Scanner for barcode scanning. Google Code Scanner handles the camera in a separate system component, which is why UseSoon does <strong>not</strong> ask for camera permission.</p>
+
+    <h2>6. Children</h2>
+    <p>UseSoon is a household food-management tool. It is not directed at children under 13 and we do not knowingly collect data from children.</p>
+
+    <h2>7. Data retention and deletion</h2>
+    <p>All food item data lives on your device.</p>
+    <ul>
+      <li><strong>Delete an item</strong> — tap the item and choose Delete.</li>
+      <li><strong>Delete all app data</strong> — uninstall UseSoon, or use Android's system settings (Settings → Apps → UseSoon → Storage → Clear storage).</li>
+    </ul>
+    <p>Because we do not operate servers, there is no server-side data to delete. Uninstalling the app removes everything UseSoon stores about you from your device.</p>
+    <p>If Google Drive backup is enabled on your device, a backup copy of the app's local data may exist in your own Google Drive account under your control. You can remove it at
+      <a href="https://drive.google.com/drive/backups" target="_blank">https://drive.google.com/drive/backups</a>.
+    </p>
+
+    <h2>8. Security in transit</h2>
+    <p>Barcode lookups and product-image fetches to Open Food Facts use HTTPS.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy to reflect changes in the app. Material changes will be communicated in-app or via the app's Play Store listing.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions, requests, or concerns: <strong>vitasynclabs@gmail.com</strong>.</p>
+  </div>
+</body>
+</html>
